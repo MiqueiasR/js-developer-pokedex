@@ -23,14 +23,12 @@
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
-
+    <section class="container">
+        <h1>Pokedex com Hover</h1>
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
-        <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
             </button>
@@ -44,3 +42,13 @@
 </body>
 
 </html>
+
+.item{
+    transition: .35s;
+    cursor: pointer;
+}
+.container:hover > :not( :hover ){
+    opacity: .4;
+    transform: scale(0.9);
+    }
+    

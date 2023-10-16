@@ -5,6 +5,14 @@
 
 body {
     background-color: #f6f8fc;
+    .item{
+        transition: .35s;
+        cursor: pointer;
+    }
+    .container:hover > :not( :hover ){
+        opacity: .4;
+        transform: scale(0.9);
+        }
 }
 
 .content {
@@ -12,6 +20,14 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    .item{
+        transition: .35s;
+        cursor: pointer;
+    }
+    .container:hover > :not( :hover ){
+        opacity: .4;
+        transform: scale(0.9);
+        }
 }
 
 @media screen and (min-width: 992px) {
@@ -21,4 +37,12 @@ body {
         margin: 1rem auto;
         border-radius: 1rem;
     }
+    .item{
+        transition: .35s;
+        cursor: pointer;
+    }
+    .container:hover > :not( :hover ){
+        opacity: .4;
+        transform: scale(0.9);
+        }
 }
